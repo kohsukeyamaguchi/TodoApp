@@ -1,0 +1,17 @@
+$base-color:#FFFFFF;
+$main-font-color:#202124;
+$sub1-font-color:#5f6368;
+$sub2-font-color:#80868b;
+$accent-color:#1a73e8;
+
+.c-todoapp{
+    margin: auto;
+    width: 60%;
+}
+
+.c-create-setting-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}

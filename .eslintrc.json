@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "plugin:react/recommended" // react書く用のおすすめの設定にしてくれるプラグインを読み込む
+  ],
+  "parserOptions": {
+    "sourceType": "module" // import/exportを使うため
+  },
+  "env": {
+    "browser": true // ブラウザー用オブジェクト（documentオブジェクト）を使えるように
+  },
+  "globals": {
+    "window": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [],
+  "rules": {},
+  "globals": {}
+}

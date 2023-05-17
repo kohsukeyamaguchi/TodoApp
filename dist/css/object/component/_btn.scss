@@ -1,0 +1,52 @@
+$base-color:#FFFFFF;
+$main-font-color:#202124;
+$sub1-font-color:#5f6368;
+$sub2-font-color:#80868b;
+$accent-color:#1a73e8;
+
+.c-buttons{
+    text-align: right;
+}
+
+.c-create-button{
+    cursor: pointer;
+    border: none;
+    background: $base-color;
+    font-size: 14px;
+    color: $accent-color;
+}
+
+.c-cancel-button{
+    border: none;
+    background: $base-color;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.c-todo-create-button{
+    margin-left: 20px;
+    font-size: 25px;
+    color: $accent-color;
+    height: 35px;
+    line-height: 35px;
+    width: 90%;
+    border-radius: 100px;
+    padding-left: 10px;
+    cursor: pointer;
+    &:hover{
+        background: rgba(128, 134, 139, 0.2);
+    }
+}
+
+.c-setting-todo-button{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 35px;
+    cursor: pointer;
+    &:hover{
+        background: rgba(128, 134, 139, 0.2);
+    }
+}

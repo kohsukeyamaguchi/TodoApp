@@ -1,0 +1,15 @@
+$base-color:#FFFFFF;
+$main-font-color:#202124;
+$sub1-font-color:#5f6368;
+$sub2-font-color:#80868b;
+$accent-color:#1a73e8;
+
+.c-main-title{
+    font-size: 50px;
+    margin: 100px auto 0px auto;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: $sub1-font-color;
+}

@@ -1,0 +1,113 @@
+$base-color: #ffffff;
+$main-font-color: #202124;
+$sub1-font-color: #5f6368;
+$sub2-font-color: #80868b;
+$accent-color: #1a73e8;
+
+.c-lists {
+  width: 100%;
+  margin: auto;
+}
+
+.c-lists__ul {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 50px;
+  border-bottom: 1.5px solid rgba(128, 134, 139, 0.2);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.c-lists__li {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.c-current-list {
+  color: $accent-color;
+  border-bottom: 3px solid #1a73e8;
+  transition: all 0.5s 0s ease;
+  border-bottom: 3px solid #1a73e8;
+  animation: clickListAnimation 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.c-create-list-form {
+  width: 300px;
+  height: 153px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 8px 15px 40px -20px;
+}
+
+.c-js-create-list-form--show {
+  display: block;
+}
+
+.c-js-create-list-form--close {
+  display: none;
+}
+
+.c-form-contents {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.c-create-list-form__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.c-create-list-input {
+  outline: none;
+  border: none;
+  background: rgba(128, 134, 139, 0.1);
+  border-bottom: 3px solid rgba(32, 33, 36, 0.3);
+  height: 35px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  &::placeholder {
+    color: rgba(32, 33, 36, 0.3);
+  }
+  &:focus {
+    border-bottom: 3px solid $accent-color;
+    transition: 0.5s;
+  }
+}
+
+.c-cover {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes clickListAnimation {
+  0% {
+    background: rgba(26, 115, 232, 0.1);
+  }
+  100% {
+    background: $base-color;
+  }
+}

@@ -1,0 +1,46 @@
+$base-color:#FFFFFF;
+$main-font-color:#202124;
+$sub1-font-color:#5f6368;
+$sub2-font-color:#80868b;
+$accent-color:#1a73e8;
+
+.settings-Close{
+    display: none;
+}
+
+.settings-Show{
+    display: block;
+}
+.c-settings-form{
+    width: 200px;
+    height: 200px;
+    background: #FFF;
+    position: absolute;
+    top: 310px;
+    z-index: 1;
+    left: 990px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 1px 1px 70px -20px;
+    cursor: default;
+}
+
+.c-setting-form__title{
+    font-size: 14px;
+    color: rgba(128, 134, 139, 1);
+    margin-right: 90px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+//.c-setting-form__lists{
+//    
+//}
+
+.c-sort{
+    cursor: pointer;
+    margin-bottom: 10px;
+    &:hover{
+        background: rgba(128, 134, 139, 0.1);
+    }
+}
